@@ -1,0 +1,41 @@
+company_name: Global_Tech
+employees:
+  - id: 101
+    type: Manager
+    name: Gevorgian
+    year: 1990
+    position: CTO
+    education: Higher
+    salary: 500000
+  - id: 102
+    type: Employee
+    name: Oleg
+    year: 2002
+    position: Junior_Dev
+    education: BMSTU
+    salary: 100000
+  - id: 103
+    type: Employee
+    name: Egor
+    year: 2000
+    position: HR_Specialist
+    education: MSU
+    salary: 80000
+  - id: 104
+    type: Employee
+    name: Anny
+    year: 1988
+    position: Small_tester
+    education: Higher
+    salary: 70000
+departments:
+  - name: IT_Core
+    manager_id: 101
+    staff_ids: [101, 104]
+    sub_departments:
+      - name: IT_Department
+        manager_id: -1
+        staff_ids: [102]
+  - name: HR_Department
+    manager_id: -1
+    staff_ids: [103]
